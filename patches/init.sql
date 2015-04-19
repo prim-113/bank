@@ -27,7 +27,7 @@ CREATE TABLE `BankCard`(
     `id` INT(10) NOT NULL AUTO_INCREMENT,
     `cardNumber` VARCHAR(25) NOT NULL,
     `bankAccount` INT(10), 
-    `blocked` BOOLEAN,
+    `blocked` BIT,
     PRIMARY KEY (`id`),
     FOREIGN KEY (`bankAccount`) REFERENCES `BankAccount` (`id`));
 
